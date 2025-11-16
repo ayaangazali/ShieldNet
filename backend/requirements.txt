@@ -1,0 +1,58 @@
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Database (using newer versions for Python 3.13 compatibility)
+sqlalchemy>=2.0.36
+alembic>=1.14.0
+aiosqlite>=0.20.0  # For SQLite async (default, no setup required!)
+# For PostgreSQL support (optional - install only if using PostgreSQL):
+# psycopg2-binary==2.9.9
+# asyncpg==0.29.0
+
+# Pydantic (using newer versions for Python 3.13 compatibility)
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+
+# PDF Processing
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+pdf2image==1.16.3
+pytesseract==0.3.10
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+bcrypt==4.1.1
+
+# Web3 & Blockchain (OPTIONAL - only needed if USE_ONCHAIN_THREATS=true)
+# - By default, threats are stored locally (no blockchain required)
+# - Install these ONLY if you want Base mainnet integration
+# - Locus SDK handles USDC payments separately (see treasury.py)
+# web3>=6.11.3
+# eth-account>=0.10.0
+
+# ML & Data Processing (optional - for advanced fraud detection)
+# scikit-learn==1.3.2
+# numpy==1.26.2
+# pandas==2.1.3
+
+# HTTP Client
+httpx==0.25.2
+
+# AI/LLM (for intelligent invoice processing agents)
+openai>=1.0.0  # GPT-4 for reading invoices, detecting threats, analyzing fraud
+
+# Background Tasks (optional - only if using Celery)
+# celery==5.3.4
+# redis==5.0.1
+
+# Utilities
+python-dateutil==2.8.2
+
+# Testing (optional)
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# pytest-cov==4.1.0

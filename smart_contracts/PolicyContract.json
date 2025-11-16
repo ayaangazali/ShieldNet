@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "contractType": "PolicyContract",
+  "description": "Stores company payment policies and mandate rules for auto-pay/hold/block decisions",
+  "lastUpdated": "2025-11-15T23:53:50Z",
+  "policies": [
+    {
+      "companyId": "company_1",
+      "policyId": "auto_small_invoices",
+      "name": "Auto-approve small verified invoices",
+      "maxAmount": 2000.0,
+      "minAmount": null,
+      "minConfidence": 0.9,
+      "maxFraudScore": 0.2,
+      "autoPay": true,
+      "blockUnknownVendors": false,
+      "requirePO": false,
+      "autoBlock": false,
+      "createdAt": "2025-11-10T12:00:00Z",
+      "updatedAt": "2025-11-10T12:00:00Z",
+      "active": true
+    },
+    {
+      "companyId": "company_1",
+      "policyId": "hold_large_invoices",
+      "name": "Hold large invoices for manual review",
+      "maxAmount": null,
+      "minAmount": 10000.0,
+      "minConfidence": 0.95,
+      "maxFraudScore": 0.1,
+      "autoPay": false,
+      "blockUnknownVendors": true,
+      "requirePO": true,
+      "autoBlock": false,
+      "createdAt": "2025-11-10T12:00:00Z",
+      "updatedAt": "2025-11-10T12:00:00Z",
+      "active": true
+    },
+    {
+      "companyId": "company_1",
+      "policyId": "block_high_fraud",
+      "name": "Auto-block high fraud score invoices",
+      "maxAmount": null,
+      "minAmount": null,
+      "minConfidence": 0.0,
+      "maxFraudScore": 0.7,
+      "autoPay": false,
+      "blockUnknownVendors": true,
+      "requirePO": false,
+      "autoBlock": true,
+      "createdAt": "2025-11-10T12:00:00Z",
+      "updatedAt": "2025-11-10T12:00:00Z",
+      "active": true
+    }
+  ]
+}

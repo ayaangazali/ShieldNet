@@ -1,0 +1,102 @@
+{
+  "version": "1.0.0",
+  "contractType": "ThreatIntelContract",
+  "description": "Decentralized threat intelligence network storing anonymized fraud fingerprints",
+  "lastUpdated": "2025-11-15T23:53:50Z",
+  "threats": [
+    {
+      "threatId": "threat_550e8400-e29b-41d4-a716-446655440000",
+      "vendorHash": "8f3e5b9c2a1d4f6e7b8a9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f",
+      "paymentTargetType": "wallet_address",
+      "paymentTargetHash": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2",
+      "invoiceTemplateHash": "def456abc789def456abc789def456abc789def456abc789def456abc789def4",
+      "amountBucket": "5k-20k",
+      "currency": "USDC",
+      "fraudScore": 0.91,
+      "reasons": [
+        "NO_PO_MATCH",
+        "HOURS_EXCEED_LOGS",
+        "SUSPICIOUS_WALLET_CHANGE"
+      ],
+      "firstSeenAt": "2025-11-10T12:00:00Z",
+      "lastSeenAt": "2025-11-10T12:00:00Z",
+      "timesSeen": 1,
+      "reporterId": "company_1",
+      "reporterHash": "970c5fda546a269e8b2c0a3f1e7d9c4b",
+      "networkReward": 0.0,
+      "verified": false
+    },
+    {
+      "threatId": "threat_660e9511-f39c-52e5-b827-557766551111",
+      "vendorHash": "050539eeae30fd5240ba8e85f3e3b125d4a92efc875c52feae76227388907ca5",
+      "paymentTargetType": "bank_account",
+      "paymentTargetHash": "7619ee8cea49187f309616e30ecf54be072259b43760f1f550a644945d5572f2",
+      "invoiceTemplateHash": "d0c6b9c7e47dd89c01d6892fc362309f1edff4a8d5eb13121468db0ffa568152",
+      "amountBucket": "1k-5k",
+      "currency": "USD",
+      "fraudScore": 0.78,
+      "reasons": [
+        "TEMPLATE_SIMILARITY_KNOWN_FRAUD",
+        "ACCOUNT_NUMBER_MISMATCH"
+      ],
+      "firstSeenAt": "2025-11-12T08:30:00Z",
+      "lastSeenAt": "2025-11-14T16:45:00Z",
+      "timesSeen": 3,
+      "reporterId": "company_2",
+      "reporterHash": "a80d6feb657b37af9c3d1b4f2e8e0d5c",
+      "networkReward": 150.0,
+      "verified": true
+    },
+    {
+      "threatId": "threat_68633406-16ef-4c90-bcd5-f19fe93fc193",
+      "vendorHash": "6b4c232a50e6bcd7893351f16acb18346e61052b41985e078771f5efdf4bd554",
+      "paymentTargetType": "wallet_address",
+      "paymentTargetHash": "1b940c5f85b079ee88f1e0c54ad29e67ca0dd85b5726d1324984dd4938ced7e3",
+      "invoiceTemplateHash": "0f38a5e666e801889593f1d7dea2c1e51cf7dee45026fe93c55b64470d955ad5",
+      "amountBucket": "5k-20k",
+      "currency": "USDC",
+      "fraudScore": 0.87,
+      "reasons": [
+        "NO_PO_MATCH",
+        "HOURS_EXCEED_LOGS",
+        "SUSPICIOUS_WALLET_CHANGE"
+      ],
+      "firstSeenAt": "2025-11-15T23:47:28Z",
+      "lastSeenAt": "2025-11-15T23:47:28Z",
+      "timesSeen": 1,
+      "reporterId": "test_company_1",
+      "reporterHash": "5f4ab29316781e741f0dc0ca6fcd4777",
+      "networkReward": 0.0,
+      "verified": false
+    },
+    {
+      "threatId": "threat_2f38a05c-c0e0-44fd-bde9-7e575d770840",
+      "vendorHash": "6b4c232a50e6bcd7893351f16acb18346e61052b41985e078771f5efdf4bd554",
+      "paymentTargetType": "wallet_address",
+      "paymentTargetHash": "1b940c5f85b079ee88f1e0c54ad29e67ca0dd85b5726d1324984dd4938ced7e3",
+      "invoiceTemplateHash": "0f38a5e666e801889593f1d7dea2c1e51cf7dee45026fe93c55b64470d955ad5",
+      "amountBucket": "5k-20k",
+      "currency": "USDC",
+      "fraudScore": 0.87,
+      "reasons": [
+        "NO_PO_MATCH",
+        "HOURS_EXCEED_LOGS",
+        "SUSPICIOUS_WALLET_CHANGE"
+      ],
+      "firstSeenAt": "2025-11-15T23:53:50Z",
+      "lastSeenAt": "2025-11-15T23:53:50Z",
+      "timesSeen": 1,
+      "reporterId": "test_company_1",
+      "reporterHash": "5f4ab29316781e741f0dc0ca6fcd4777",
+      "networkReward": 0.0,
+      "verified": false
+    }
+  ],
+  "statistics": {
+    "totalThreats": 4,
+    "totalBlockedAmount": 40500,
+    "verifiedReporters": 1,
+    "highRiskVendors": 3,
+    "lastThreatReported": "2025-11-15T23:53:50Z"
+  }
+}

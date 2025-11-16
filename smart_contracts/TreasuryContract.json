@@ -1,0 +1,329 @@
+{
+  "version": "1.0.0",
+  "contractType": "TreasuryContract",
+  "description": "Treasury management contract tracking company balances, payments, and transaction history",
+  "lastUpdated": "2025-11-15T23:53:50Z",
+  "companies": [
+    {
+      "companyId": "company_1",
+      "companyName": "Acme Corp",
+      "balance": 50000.0,
+      "currency": "USDC",
+      "totalPaid": 15400.0,
+      "totalBlocked": 8200.0,
+      "totalHeld": 3500.0,
+      "createdAt": "2025-11-01T00:00:00Z",
+      "lastActivity": "2025-11-14T18:30:00Z",
+      "transactions": [
+        {
+          "txId": "tx_001",
+          "invoiceId": "INV-001",
+          "vendor": "Acme Dev Agency",
+          "vendorId": "vendor_123",
+          "amount": 3200.0,
+          "currency": "USDC",
+          "status": "PAID",
+          "decision": "APPROVE",
+          "timestamp": "2025-11-10T12:34:56Z",
+          "meta": {
+            "fraudScore": 0.05,
+            "confidence": 0.97,
+            "policyMatched": "auto_small_invoices",
+            "paymentMethod": "crypto",
+            "paymentAddress": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb1",
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": null,
+            "assignedTo": null
+          }
+        },
+        {
+          "txId": "tx_002",
+          "invoiceId": "INV-002",
+          "vendor": "Beta Solutions",
+          "vendorId": "vendor_456",
+          "amount": 8200.0,
+          "currency": "USDC",
+          "status": "BLOCKED",
+          "decision": "BLOCK",
+          "timestamp": "2025-11-11T09:15:22Z",
+          "meta": {
+            "fraudScore": 0.89,
+            "confidence": 0.92,
+            "policyMatched": "block_high_fraud",
+            "paymentMethod": null,
+            "paymentAddress": null,
+            "blockReasons": [
+              "NO_PO_MATCH",
+              "SUSPICIOUS_WALLET_CHANGE"
+            ],
+            "threatId": "threat_550e8400-e29b-41d4-a716-446655440000",
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": null,
+            "assignedTo": null
+          }
+        },
+        {
+          "txId": "tx_003",
+          "invoiceId": "INV-003",
+          "vendor": "Gamma Consulting",
+          "vendorId": "vendor_789",
+          "amount": 12200.0,
+          "currency": "USDC",
+          "status": "PAID",
+          "decision": "APPROVE",
+          "timestamp": "2025-11-13T14:20:10Z",
+          "meta": {
+            "fraudScore": 0.12,
+            "confidence": 0.94,
+            "policyMatched": "hold_large_invoices",
+            "paymentMethod": "crypto",
+            "paymentAddress": "0x8b3e6c9a2f1d5e7b4a9c0d1f2e3b4c5d6e7f8a9b",
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": true,
+            "approvedBy": "user_admin_001",
+            "holdReason": null,
+            "assignedTo": null
+          }
+        },
+        {
+          "txId": "tx_004",
+          "invoiceId": "INV-004",
+          "vendor": "Delta Services",
+          "vendorId": "vendor_101",
+          "amount": 3500.0,
+          "currency": "USDC",
+          "status": "HELD",
+          "decision": "HOLD",
+          "timestamp": "2025-11-14T18:30:00Z",
+          "meta": {
+            "fraudScore": 0.35,
+            "confidence": 0.88,
+            "policyMatched": "hold_large_invoices",
+            "paymentMethod": null,
+            "paymentAddress": null,
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": "MANUAL_REVIEW_REQUIRED",
+            "assignedTo": "user_reviewer_002"
+          }
+        }
+      ]
+    },
+    {
+      "companyId": "company_2",
+      "companyName": "TechStart Inc",
+      "balance": 25000.0,
+      "currency": "USDC",
+      "totalPaid": 8900.0,
+      "totalBlocked": 2300.0,
+      "totalHeld": 0.0,
+      "createdAt": "2025-11-05T00:00:00Z",
+      "lastActivity": "2025-11-14T10:00:00Z",
+      "transactions": [
+        {
+          "txId": "tx_101",
+          "invoiceId": "INV-101",
+          "vendor": "Code Factory",
+          "vendorId": "vendor_201",
+          "amount": 5400.0,
+          "currency": "USDC",
+          "status": "PAID",
+          "decision": "APPROVE",
+          "timestamp": "2025-11-12T11:00:00Z",
+          "meta": {
+            "fraudScore": 0.08,
+            "confidence": 0.96,
+            "policyMatched": "auto_small_invoices",
+            "paymentMethod": "crypto",
+            "paymentAddress": "0x1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": null,
+            "assignedTo": null
+          }
+        }
+      ]
+    },
+    {
+      "companyId": "test_company_1",
+      "companyName": "Test Company 1",
+      "balance": 91600.0,
+      "currency": "USDC",
+      "totalPaid": 8400.0,
+      "totalBlocked": 25000.0,
+      "totalHeld": 17800.0,
+      "createdAt": "2025-11-15T23:47:28Z",
+      "lastActivity": "2025-11-15T23:53:50Z",
+      "transactions": [
+        {
+          "txId": "tx_1763250448654",
+          "invoiceId": "TEST-INV-001",
+          "vendor": "Trusted Vendor Inc",
+          "vendorId": "vendor_test_001",
+          "amount": 4200.0,
+          "currency": "USDC",
+          "status": "PAID",
+          "decision": "APPROVE",
+          "timestamp": "2025-11-15T23:47:28Z",
+          "meta": {
+            "fraudScore": 0.08,
+            "confidence": 0.96,
+            "policyMatched": "test_auto_pay",
+            "paymentMethod": "crypto",
+            "paymentAddress": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb1",
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": null,
+            "assignedTo": null
+          }
+        },
+        {
+          "txId": "tx_1763250448655",
+          "invoiceId": "TEST-INV-002",
+          "vendor": "Suspicious Vendor",
+          "vendorId": "vendor_test_002",
+          "amount": 12500.0,
+          "currency": "USDC",
+          "status": "BLOCKED",
+          "decision": "BLOCK",
+          "timestamp": "2025-11-15T23:47:28Z",
+          "meta": {
+            "fraudScore": 0.91,
+            "confidence": 0.88,
+            "policyMatched": "block_high_fraud",
+            "paymentMethod": null,
+            "paymentAddress": null,
+            "blockReasons": [
+              "NO_PO_MATCH",
+              "SUSPICIOUS_WALLET_CHANGE"
+            ],
+            "threatId": "threat_123abc",
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": null,
+            "assignedTo": null
+          }
+        },
+        {
+          "txId": "tx_1763250448655",
+          "invoiceId": "TEST-INV-003",
+          "vendor": "Medium Risk Vendor",
+          "vendorId": "vendor_test_003",
+          "amount": 8900.0,
+          "currency": "USDC",
+          "status": "HELD",
+          "decision": "HOLD",
+          "timestamp": "2025-11-15T23:47:28Z",
+          "meta": {
+            "fraudScore": 0.42,
+            "confidence": 0.85,
+            "policyMatched": "hold_for_review",
+            "paymentMethod": null,
+            "paymentAddress": null,
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": true,
+            "approvedBy": null,
+            "holdReason": "MEDIUM_FRAUD_SCORE",
+            "assignedTo": "admin_001"
+          }
+        },
+        {
+          "txId": "tx_1763250830024",
+          "invoiceId": "TEST-INV-001",
+          "vendor": "Trusted Vendor Inc",
+          "vendorId": "vendor_test_001",
+          "amount": 4200.0,
+          "currency": "USDC",
+          "status": "PAID",
+          "decision": "APPROVE",
+          "timestamp": "2025-11-15T23:53:50Z",
+          "meta": {
+            "fraudScore": 0.08,
+            "confidence": 0.96,
+            "policyMatched": "test_auto_pay",
+            "paymentMethod": "crypto",
+            "paymentAddress": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb1",
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": null,
+            "assignedTo": null
+          }
+        },
+        {
+          "txId": "tx_1763250830025",
+          "invoiceId": "TEST-INV-002",
+          "vendor": "Suspicious Vendor",
+          "vendorId": "vendor_test_002",
+          "amount": 12500.0,
+          "currency": "USDC",
+          "status": "BLOCKED",
+          "decision": "BLOCK",
+          "timestamp": "2025-11-15T23:53:50Z",
+          "meta": {
+            "fraudScore": 0.91,
+            "confidence": 0.88,
+            "policyMatched": "block_high_fraud",
+            "paymentMethod": null,
+            "paymentAddress": null,
+            "blockReasons": [
+              "NO_PO_MATCH",
+              "SUSPICIOUS_WALLET_CHANGE"
+            ],
+            "threatId": "threat_123abc",
+            "manualReview": false,
+            "approvedBy": null,
+            "holdReason": null,
+            "assignedTo": null
+          }
+        },
+        {
+          "txId": "tx_1763250830025",
+          "invoiceId": "TEST-INV-003",
+          "vendor": "Medium Risk Vendor",
+          "vendorId": "vendor_test_003",
+          "amount": 8900.0,
+          "currency": "USDC",
+          "status": "HELD",
+          "decision": "HOLD",
+          "timestamp": "2025-11-15T23:53:50Z",
+          "meta": {
+            "fraudScore": 0.42,
+            "confidence": 0.85,
+            "policyMatched": "hold_for_review",
+            "paymentMethod": null,
+            "paymentAddress": null,
+            "blockReasons": null,
+            "threatId": null,
+            "manualReview": true,
+            "approvedBy": null,
+            "holdReason": "MEDIUM_FRAUD_SCORE",
+            "assignedTo": "admin_001"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStats": {
+    "totalCompanies": 3,
+    "totalBalance": 166600.0,
+    "totalTransactions": 11,
+    "totalPaid": 32700.0,
+    "totalBlocked": 35500.0,
+    "totalHeld": 21300.0,
+    "lastTransaction": "2025-11-15T23:53:50Z"
+  }
+}
